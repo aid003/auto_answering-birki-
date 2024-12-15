@@ -59,19 +59,19 @@ export async function botAvito() {
         currentToken,
         "Здравствуйте"
       );
-      await sleep(20000);
+      await sleep(10000);
 
       const message = await chekIdAdvForAnswer(chat.context.value.id);
 
       await sendMessage(process.env.USER_ID, chat.id, currentToken, message);
-        
-      await sleep(2000);
+
+      await sleep(1000);
 
       await sendMessage(
         process.env.USER_ID,
         chat.id,
         currentToken,
-        "https://t.me/GMTUSDT"
+        "https://t.me/milliondollarontags_bot"
       );
 
       let messageStr = "🟢 Новый клиент";
