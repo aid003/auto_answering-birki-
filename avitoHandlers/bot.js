@@ -67,11 +67,17 @@ export async function botAvito() {
 
       await sleep(1000);
 
+      // await sendMessage(
+      //   process.env.USER_ID,
+      //   chat.id,
+      //   currentToken,
+      //   "https://t.me/milliondollarontags_bot"
+      // );
       await sendMessage(
         process.env.USER_ID,
         chat.id,
         currentToken,
-        "https://t.me/milliondollarontags_bot"
+        "@milliondollarontags_bot"
       );
 
       let messageStr = "🟢 Новый клиент";
